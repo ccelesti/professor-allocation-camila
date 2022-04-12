@@ -10,6 +10,7 @@ import javax.persistence.Table;
 @Entity
 @Table
 public class Professor {
+	
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -18,6 +19,7 @@ public class Professor {
 	@Column (length = 11, nullable = false, unique = true)
 	private String cpf;
 	
+	@Column (name = "department_id", nullable = false)
 	private Long departmentId;
 
 	public Long getId() {
