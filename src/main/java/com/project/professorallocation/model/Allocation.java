@@ -48,6 +48,15 @@ public class Allocation {
 	@JoinColumn(name = "course_id", nullable = false, insertable = false, updatable = false)
 	private Course course;
 	
+	
+	
+	@Override
+	public String toString() {
+		return "Allocation [id=" + id + ", dayOfWeek=" + dayOfWeek + ", startHour=" + startHour + ", endHour=" + endHour
+				+ ", professorId=" + professorId + ", professor=" + professor + ", courseId=" + courseId + ", course="
+				+ course + "]";
+	}
+
 	public Allocation() {
 		super();
 	}

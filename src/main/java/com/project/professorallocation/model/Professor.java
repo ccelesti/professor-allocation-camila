@@ -29,6 +29,12 @@ public class Professor {
 	private Department department;
 		
 	
+	@Override
+	public String toString() {
+		return "Professor [id=" + id + ", name=" + name + ", cpf=" + cpf + ", departmentId=" + departmentId
+				+ ", department=" + department + "]";
+	}
+
 	public Department getDepartment() {
 		return department;
 	}
